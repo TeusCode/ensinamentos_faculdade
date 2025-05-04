@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duplicando ou triplicando números</title>
+</head>
+
+<body>
+    <script>
+        //Calculadora que duplica ou triplica números:
+
+        console.log("Opções:")
+
+        alert("1.Cálcular o doblo do número                                                              2.Cálcular o tripo do número")
+        let escolha = Number(prompt("Escolha uma opção:"))
+        let n1 = Number(prompt("Dígite um número"))
+
+        switch (escolha) { //Variável a ser testada
+            case 1: //Opção 1, se o valor dentro da variável escolha for 1, ele vai executar esse bloco de código:
+
+                let result1 = n1 * 2
+                alert("O resultado da operação é:" + result1)
+                break; //Depois de executar o bloco é necessário parar a execução!
+
+            case 2: //Opção 2, se o valor dentro da variável escolha for 2, ele vai executar esse bloco de código:
+                let result2 = n1 * 3
+                alert("O resultado da operação é: " + result2)
+                break; //Depois de executar o bloco é necessário parar a execução!
+
+            default:
+                alert("Escolha a opção 1 ou 2, somente!")
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    /* Escreva um algoritmo que solicite ao usuário 5 nomes e 5 notas e calcue a média das notas da turma (armazenar as notas em um array/vetor)
+*/
+
+
+    //Entradas:
+    let nomes = []
+    let notas = []
+
+    for (let contagem = 0; contagem <= 4; contagem++) {
+        //Ele vai pedir o nome:
+        let nome = window.prompt(`Qual o seu nome?`)
+        let nota = Number(window.prompt(`Qual é sua nota?`))
+        //Depois vai guardar dentro da variável
+        //E a função push vai pegar o nome dentro da variável e jogar dentro da array
+
+        notas.push(nota)
+        nomes.push(nome)
+
+    }
+
+    //Processamento:
+    let soma = notas.reduce((acumulador, valor) => acumulador + valor, 0);
+    let media = soma / 5
+
+    //Saída:
+    window.alert(`A média das notas é ${media}`)
+
+
+
+
+
+
+</script>
+
+</html>

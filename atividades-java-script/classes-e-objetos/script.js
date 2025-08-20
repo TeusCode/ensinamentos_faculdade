@@ -55,7 +55,32 @@ let objCarro {
     cor: 'vermelho',
     modelo: 'Uno',
     ano: 2010;
-    ligar() function() {
-        console.log('O carro está ligando!')
-    },
+ligar() function() {
+    console.log('O carro está ligando!')
+},
+}
+
+//exemplo simples de sistema:
+
+class Cliente {
+    constructor(nome, email, idade, saldo) {
+        this.nome = String(nome),
+            this.email = String(email),
+            this.idade = Number(idade),
+            this.saldo = Number(saldo),
+    }
+}
+
+//Registrar um cliente:
+
+let cliente = new Cliente('João', 'Joao@gmail.com', 25, 1000)
+
+
+class Pedido {
+    constructor(produto, valor, quantidade, status) {
+        this.produto = String(produto),
+            this.valor = Number(valor),
+            this.quantidade = Number(quantidade),
+            this.status = String(status),
+    }
 }
